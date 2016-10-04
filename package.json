@@ -4,7 +4,7 @@
   "description": "React fundamentals exercise",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+  "start": "webpack-dev-server --watch-poll"
   },
   "author": "",
   "license": "ISC",
