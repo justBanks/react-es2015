@@ -6,8 +6,6 @@
      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
     ----------------------------------------------------------------- 
 
-Based on the [React Fundamentals](https://egghead.io/courses/react-fundamentals) course at egghead.io  
-
 npm init  
 
 npm install react react-dom --save  
