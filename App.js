@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 export default class App extends Component {
 	constructor(){
 		super(); //<<--provides the context for 'this'
-		this.state = { red: 128, green: 128, blue: 128 };
+		this.state = { red: 0, green: 0, blue: 0 };
 		this.update = this.update.bind(this);
 	}
 	update(e){
@@ -31,7 +31,7 @@ export default class App extends Component {
 class Slider extends React.Component {
 	render() {
 		return (
-			<input type="range" min="0" max="255" 
+			<input type="range" min="0" max="255" defaultValue="0" 
 			  onChange={this.props.update} />
 		);
 	}
