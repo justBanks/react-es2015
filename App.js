@@ -37,6 +37,14 @@ class Slider extends React.Component {
 	}
 }
 
+Slider.propTypes = {
+	txt: React.PropTypes.string.isRequired,
+	update: React.PropTypes.func,
+	min: React.PropTypes.number,
+	max: React.PropTypes.number,
+	type: React.PropTypes.oneOf(['range','number']),
+}
+
 const Widget = (props) => {
 	return (
 		<div> 
@@ -47,3 +55,25 @@ const Widget = (props) => {
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
+
+/*	Special functions:
+
+	componentWillReceiveProps(nextProps)
+	shouldComponentUpdate(nextProps, nextState)
+	componentDidUpdate(prevProps, prevState)
+
+	Higher order components (mixins):
+	let Mixin = InnerComponent => class extends Component
+
+	Each child in an array or iterator should have a unique "key" prop
+	render(){
+		let rows = this.state.data.map( person => {
+			return <PersonRow key={person.id} data={person} />
+		})
+		return...
+	}
+
+<script type="text/jsx">
+	React.renderComponent(<Site />, document.body)
+</script>
+*/
