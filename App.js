@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 export default class App extends Component {
 	constructor(){
 		super(); //<<--provides the context for 'this'
-		this.state = { red: 0, green: 0, blue: 0 };
+		this.state = { red: 128, green: 128, blue: 128 };
 		this.update = this.update.bind(this);
 	}
 	update(e){
